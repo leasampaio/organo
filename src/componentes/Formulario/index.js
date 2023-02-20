@@ -1,10 +1,11 @@
 import CampoTexto from '../CampoTexto'
-import './Forms.css'
+import './Formulario.css'
 
-const Forms = () => {
+const Formulario = () => {
     return (
-        <section>
-            <form>
+        <section className="formulario">            
+            <form >
+                <h2> Preencha o formulário para criar o card do colaborador:</h2>
                 <CampoTexto label="Nome" placeholder= "Digite seu nome"/>
                 <CampoTexto label="Cargo" placeholder="Digite o seu cargo"/>
                 <CampoTexto label="Imagem"placeholder="Digite o enderenço da imagem"/>
@@ -13,4 +14,4 @@ const Forms = () => {
     )
 
 }
-export default Forms
+export default Formulario
