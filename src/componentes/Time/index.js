@@ -10,7 +10,8 @@ const Time = (props) =>{
             <h3 style={ccsBorda}>{props.nome}</h3>
             <div className="colaboradores">
                 {props.colaboradores.map(colaborador => 
-                <Colaborador nome ={colaborador.nome}
+                <Colaborador nome={colaborador.nome}
+                corDeFundo={props.corPrimaria}
                 key={colaborador.nome}
                 cargo={colaborador.cargo} 
                 imagem={colaborador.imagem}  
