@@ -6,7 +6,7 @@ const Time = (props) =>{
     const ccsBorda = {borderColor: props.corPrimaria}
     
     return(
-        <section className="time" style={cssFundo}>
+        (props.colaboradores.length > 0) &&<section className="time" style={cssFundo}>
             <h3 style={ccsBorda}>{props.nome}</h3>
             <div className="colaboradores">
                 {props.colaboradores.map(colaborador => 
